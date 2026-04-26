@@ -9,8 +9,9 @@ sdk.dir=/path/to/your/android/sdk
 ## Firebase / Gemini AI
 ## ---------------------------------------------------------------
 ## This project uses the Firebase AI SDK (firebase.ai).
-## There is NO Gemini API key hardcoded in this project.
-## The API key lives inside google-services.json, which is gitignored.
+## There is NO separate Gemini API key. The Firebase AI SDK authenticates
+## using your Firebase project credentials, which are configured through
+## google-services.json (gitignored).
 ##
 ## To run the app:
 ## 1. Go to https://console.firebase.google.com

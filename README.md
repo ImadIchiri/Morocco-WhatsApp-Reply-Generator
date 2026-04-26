@@ -33,7 +33,7 @@ Featuring the **"Nano Banana"** aesthetic theme.
    - Enable **Firebase AI (Gemini)** in the Firebase Console.
 3. **Build & Run**: Open the project in Android Studio and run it on your device.
 
-> **No API key is hardcoded in this project.** The Gemini API key lives inside `google-services.json` which is managed by Firebase and excluded from git. See `local.properties.example` for a full setup guide.
+> **No API key is hardcoded in this project.** Firebase project credentials are managed through `google-services.json` which is excluded from git. The Firebase AI SDK authenticates using those project credentials — there is no separate Gemini API key to manage. See `local.properties.example` for a full setup guide.
 
 ## 🔒 Security
 
@@ -45,7 +45,7 @@ Featuring the **"Nano Banana"** aesthetic theme.
 | `.env` / `key.properties` | ✅ Yes | Any extra secrets — never commit |
 
 - **No secrets are hardcoded** in Kotlin source files.
-- **Gemini API calls** go through the Firebase AI SDK — the key is stored in `google-services.json`, not in code.
+- **Gemini API calls** go through the Firebase AI SDK — Firebase project credentials are configured via `google-services.json`, not hardcoded in source code.
 - To set up locally, copy `local.properties.example` → `local.properties` and follow the instructions inside.
 
 ## 📸 Screenshots
