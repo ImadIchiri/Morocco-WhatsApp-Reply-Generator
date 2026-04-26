@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WhatsApp Reply Generator</string>
+    <string name="label_received_message">Received WhatsApp Message</string>
+    <string name="label_goal">Goal of my reply</string>
+    <string name="label_tone">Tone</string>
+    <string name="label_context">Optional Context</string>
+    <string name="action_generate">Generate Replies</string>
+    <string name="title_results">Reply Options</string>
+    <string name="label_short">Short</string>
+    <string name="label_professional">Professional</string>
+    <string name="label_friendly">Friendly</string>
+    <string name="action_copy">Copy</string>
+    <string name="prompt_placeholder">e.g., Salam, wach mazal kayn had produit?</string>
+    <string name="goal_placeholder">e.g., Tell them it is available and ask for quantity.</string>
+    <string name="tone_placeholder">e.g., Friendly and sales-focused</string>
+    <string name="context_placeholder">e.g., Do not mention price yet.</string>
+    <string name="error_empty_fields">Please fill in the received message and goal.</string>
+    <string name="success_copied">Copied to clipboard!</string>
+</resources>
