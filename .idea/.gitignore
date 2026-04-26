@@ -1,3 +1,5 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+# Firebase project metadata (contains project IDs - not a secret, but IDE-specific)
+/appInsightsSettings.xml

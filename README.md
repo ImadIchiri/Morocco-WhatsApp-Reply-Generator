@@ -28,13 +28,25 @@ Featuring the **"Nano Banana"** aesthetic theme.
    ```
 2. **Setup Firebase**:
    - Create a project on the [Firebase Console](https://console.firebase.google.com/).
-   - Add an Android App and download the `google-services.json`.
-   - Place `google-services.json` in the `app/` directory.
-   - Enable **Vertex AI** in the Firebase console.
+   - Add an Android App with package name `com.example.firstgeminiapp` and download the `google-services.json`.
+   - Place `google-services.json` in the `app/` directory (**this file is gitignored – never commit it**).
+   - Enable **Firebase AI (Gemini)** in the Firebase Console.
 3. **Build & Run**: Open the project in Android Studio and run it on your device.
 
+> **No API key is hardcoded in this project.** The Gemini API key lives inside `google-services.json` which is managed by Firebase and excluded from git. See `local.properties.example` for a full setup guide.
+
 ## 🔒 Security
-The `google-services.json` and `local.properties` files are excluded from this repository via `.gitignore` to protect API keys and local configurations.
+
+| File | Gitignored? | Notes |
+|---|---|---|
+| `google-services.json` | ✅ Yes | Contains Firebase API key — never commit |
+| `local.properties` | ✅ Yes | Contains local SDK path — never commit |
+| `*.jks` / `*.keystore` | ✅ Yes | Release signing keys — never commit |
+| `.env` / `key.properties` | ✅ Yes | Any extra secrets — never commit |
+
+- **No secrets are hardcoded** in Kotlin source files.
+- **Gemini API calls** go through the Firebase AI SDK — the key is stored in `google-services.json`, not in code.
+- To set up locally, copy `local.properties.example` → `local.properties` and follow the instructions inside.
 
 ## 📸 Screenshots
 *(Screenshots will be added here later!)*

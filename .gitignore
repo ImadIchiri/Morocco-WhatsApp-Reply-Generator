@@ -7,12 +7,22 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+/.idea/appInsightsSettings.xml
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
+# --- Secrets & signing ---
+# Never commit these files. Copy local.properties.example -> local.properties and fill in values.
+.env
+key.properties
+*.jks
+*.keystore
+# Firebase config (contains API keys - add to local.properties or download from Firebase Console)
 google-services.json
 app/google-services.json
 **/google-services.json
+# Kotlin build error logs (generated locally, not useful for contributors)
+.kotlin/

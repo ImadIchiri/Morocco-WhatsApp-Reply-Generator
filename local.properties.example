@@ -1,0 +1,31 @@
+## local.properties.example
+## Copy this file to local.properties and fill in your values.
+## IMPORTANT: local.properties is gitignored - NEVER commit it.
+
+# Android SDK location (set automatically by Android Studio)
+sdk.dir=/path/to/your/android/sdk
+
+## ---------------------------------------------------------------
+## Firebase / Gemini AI
+## ---------------------------------------------------------------
+## This project uses the Firebase AI SDK (firebase.ai).
+## There is NO Gemini API key hardcoded in this project.
+## The API key lives inside google-services.json, which is gitignored.
+##
+## To run the app:
+## 1. Go to https://console.firebase.google.com
+## 2. Open your project (or create one)
+## 3. Add an Android app with package: com.example.firstgeminiapp
+## 4. Download google-services.json
+## 5. Place it at: app/google-services.json
+## 6. Enable "Firebase AI" (Gemini) in the Firebase Console
+## ---------------------------------------------------------------
+
+## ---------------------------------------------------------------
+## Release signing (only needed when building a signed release APK)
+## ---------------------------------------------------------------
+## KEYSTORE_FILE=app/my-release-key.jks
+## KEYSTORE_PASSWORD=your_keystore_password
+## KEY_ALIAS=your_key_alias
+## KEY_PASSWORD=your_key_password
+## ---------------------------------------------------------------
